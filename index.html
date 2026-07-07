@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GitHub Explorer</title>
-<meta name="description" content="Discover GitHub profiles and repositories instantly with a premium interface.">
+<meta name="description" content="Discover GitHub profiles, compare repositories, and battle developer stats instantly.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,12 +14,14 @@
     <div class="app-container">
         <header>
             <h1 class="gradient-text">GitHub Explorer</h1>
-            <p>Discover profiles and repositories instantly.</p>
+            <p>Discover profiles, compare repositories, and battle developer stats.</p>
+            <button id="toggle-battle-btn" class="toggle-btn">Enter Battle Mode ⚔️</button>
         </header>
 
         <main>
             <div class="search-container glass-panel">
                 <input type="text" id="search-input" placeholder="Search GitHub username..." autocomplete="off" aria-label="GitHub username">
+                <input type="text" id="search-input-2" class="hidden" placeholder="Player 2 username..." autocomplete="off" aria-label="Second GitHub username">
                 <button id="search-btn">Search</button>
             </div>
 
@@ -49,6 +51,8 @@
                 <h3 class="section-title">Latest Repositories</h3>
                 <section id="repos-grid" class="repos-grid"></section>
             </div>
+
+            <div id="battle-container" class="hidden battle-container"></div>
         </main>
     </div>
     <script src="./app.js"></script>
