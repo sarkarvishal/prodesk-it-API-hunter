@@ -1,4 +1,4 @@
-# Dev-Detective 🔍
+# Dev-Detective 
 
 A client-side web app that looks up GitHub users and their repositories using the official [GitHub REST API](https://docs.github.com/en/rest). Built with vanilla HTML, CSS, and JavaScript — no frameworks — to demonstrate Promises, async/await, JSON parsing, and asynchronous DOM rendering.
 
@@ -79,7 +79,7 @@ No build step or dependencies required.
    ```bash
    npx serve .
    ```
-3. Enter a GitHub username (e.g. `octocat`) and search
+3. Enter a GitHub username (e.g. `sarkarvishal`) and search
 
 ---
 
